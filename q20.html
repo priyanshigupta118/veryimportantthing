@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q20</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'cornettos')
+            {
+                alert("Just for that, you've earned yourself one :*");
+               window.location.href='q21.html';
+		return false;
+
+            }
+            else {	alert("Hint: It wasn't cookies");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 20</h2>
+
+    <h4>Our very first currency for exchange of favours.</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q13</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'breakfast')
+            {
+                alert("Well done, fatty.");
+               window.location.href='q14.html';
+		return false;
+
+            }
+            else {	alert("Hint: You said you want loads of it. (No, not sex.)");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 13</h2>
+
+
+
+    <h4>I once gave you a life advice talk. We talked about life goals, career goals and _____ goals.</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

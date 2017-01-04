@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q23</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if ((x == 'masterjokecaster')||(x=='mj'))
+            {
+                alert("Can we bring that back it's so cool :o");
+               window.location.href='q24.html';
+		return false;
+
+            }
+            else {	alert("Hint: I share the name with a famous musician of questionable sexual inclinations.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 23</h2>
+
+    <h4>First proper nickname you came up with for me.</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

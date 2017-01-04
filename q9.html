@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q9</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'youreawesome')
+            {
+                alert("Indeed I am cx");
+               window.location.href='q10.html';
+		return false;
+
+            }
+            else {	alert("Tsk tsk.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 9</h2>
+
+    <img src="Screenshot_2016-02-27-23-06-13.png" height= 350px width= 200px alt="question9">
+
+    <h4>You once sent me this piece of Germanry. What is the missing translation?</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

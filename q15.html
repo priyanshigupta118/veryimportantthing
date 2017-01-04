@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q15</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'thethingswedoforlove')
+            {
+                alert("Indeed. Case in point cx");
+               window.location.href='q16.html';
+		return false;
+
+            }
+            else {	alert("Nyope. If it helps, you had made a mistake while quoting it. The answer has a 'we', not a 'you'.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 15</h2>
+
+    <img src="Screenshot_20160517-221231.png" height= 350px width= 200px alt="question9">
+
+    <h4>ID famous song lyric you quoted after sending me this not-very-flattering (yet still strangely adorable) selfie.</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

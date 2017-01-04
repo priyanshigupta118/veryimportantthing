@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q7</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'stubble')
+            {
+                alert("Yeap! I still think it's very hot, rare as it is now :*");
+               window.location.href='q8.html';
+		return false;
+
+            }
+            else {	alert("Nup. Think our first few dates.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 7</h2>
+
+    <h4>Post our starting to date, my non-noticingness disappointed you for the first time in the context of this.</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

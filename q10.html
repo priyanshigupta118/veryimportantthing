@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q10</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('vapor').checked;
+
+            if (x == true)
+            {
+                alert("Good. Or I'd have broken up with you.");
+               window.location.href='q11.html';
+		return false;
+
+            }
+            else {	alert("No. You're treading a tightrope here.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 10</h2>
+
+    <!img src="C:\Users\Acer\Documents\Project\Screenshot_2016-02-27-23-06-13.png" height= 350px width= 200px alt="question9">
+
+    <h4>This is SUPER important. Which of the Eevee evolutions has the highest multiplier?</h4>
+
+<div class="intro">
+  <input type="radio" name="answer" id="jolt"> Jolteon<br>
+  <input type="radio" name="answer" id="flare"> Flareon<br>
+  <input type="radio" name="answer" id="vapor"> Vaporeon<br> <br> 
+
+    <input name="commit" type="submit" value="Okay!" />
+</div>
+</form>
+
+</body>
+</html>

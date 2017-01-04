@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q4</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'ichooseyou')
+            {
+                alert("Aayyee. This was a refer-joke of yours I had particularly liked.");
+               window.location.href='q5.html';
+		return false;
+
+            }
+            else {	alert("Daw. Try again.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 4</h2>
+
+
+
+    <h4>Andy Grammer’s song, dedicated to Ash and Pikachu</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

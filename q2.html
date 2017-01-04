@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q2</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'selectcitywalk')
+            {
+                alert("Cookie. Here.");
+               window.location.href='q3.html';
+		return false;
+
+            }
+            else {	alert("Lulno.");}
+        }
+
+
+    </script>
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 2</h2>
+
+    <img src="IMG_20160407_165830702.jpg" height= 350px width= 200px alt="question2">
+
+    <h4> ID where this picture is from.</h4>
+
+    <p>Answer:  </p>
+<input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>

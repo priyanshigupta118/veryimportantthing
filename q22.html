@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Winnie Q22</title>
+
+    <script type='text/javascript'>
+
+        function validateForm()
+        {
+
+            var x = document.getElementById('ans').value;
+
+            if (x == 'lookthroughmyeyes')
+            {
+                alert("Yes! :* (I saw this song video all over again while making this, and I got the feels :'))");
+               window.location.href='q23.html';
+		return false;
+
+            }
+            else {	alert("Hint: It's a Phil Collins. But it's tough. So you're allowed to accept defeat graciously.");}
+        }
+
+
+    </script>
+
+<link rel='stylesheet' type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<form name="q1" action="" method="post" onsubmit="return (validateForm(this))">
+
+    <h2> Question 22</h2>
+
+    <img src="Screenshot_2016-02-22-23-01-11.png" height= 284px width= 512px alt="question9">
+
+    <h4>ID the song of which this is a still. Yes, I know that's me cx</h4>
+
+    <p>Answer:  </p><input type="text" name="answer" id="ans"></input>
+    <br> <br>
+
+    <input name="commit" type="submit" value="Okay!" />
+
+</form>
+
+</body>
+</html>
